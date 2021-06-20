@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linmain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapableimg"
+            android:layout_width="@dimen/_75sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_dummy"></com.google.android.material.imageview.ShapeableImageView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/txtname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfpro_regular"
+                android:text="Mental Training"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"></TextView>
+
+            <TextView
+                android:id="@+id/txtdurations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtname"
+                android:fontFamily="@font/sfpro_regular"
+                android:text="3 min 43 sec"
+                android:textColor="@color/ic_unselect"
+                android:textSize="@dimen/_11sdp"></TextView>
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/_3sdp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_like"></ImageView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/linmain"
+        android:background="@color/ic_unselect"></View>
+
+</RelativeLayout>
